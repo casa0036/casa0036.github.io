@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>The Coffee shop -Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -12,10 +13,11 @@
 
     <!-- Site header -->
     <header>
+        <h1>The Coffee Shop</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html"></a>Contact Us</li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="contact.html" class="current">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +25,7 @@
     <main>
         <!-- article of the page can be a standalone -->
         <!--adding a page link -->
-        <a href="#treatoftheweek">Treat of the week</a>
+        <a href="#treatoftheweek" class="blue-link">Treat of the week</a>
         <article>
             <h2>Our Story</h2>
             <!-- Adding an image -->
@@ -65,8 +67,8 @@
 
         <!-- Adding a section for description list -->
         <section id="treatoftheweek">
-            <h3>Treat of the week</h3>
-            <dl>
+            <h3 class="white-text">Treat of the week</h3>
+            <dl class="white-text">
                 <dt>Name</dt>
                 <dd>Banana bread</dd>
 
@@ -88,12 +90,12 @@
                 </dd>
             </dl>
             <!-- Adding an external link -->
-            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Get the recipe</a>
+            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank" class="blue-link large-text" >Get the recipe</a>
         </section>
         <!-- Adding a section for menu table -->
         <section>
             <h3>Menu Specials</h3>
-            <table border>
+            <table>
                 <thead>
                     <tr>
                         <th colspan="2">Items</th>
