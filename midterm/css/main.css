@@ -7,8 +7,13 @@ body {
 .container {
     background-color: rgb(207, 243, 243);
     max-width: 1200px;
-    margin: 0 8%;
+    margin: 0 auto;
     padding-bottom: 20%;
+}
+
+.nav {
+    margin-top: .5em;
+    width: 100%;
 }
 
 .nav ul {
@@ -21,8 +26,6 @@ body {
     display: inline-block;
     width: 30%;
     padding: 1em;
-    box-sizing: border-box;
-    
 }
 
 .nav ul a {
@@ -75,12 +78,12 @@ h2, h3 {
     font-size: 2em;
 }
 
-.facts {
-    padding: 1em;
+h4 {
+    font-size: 1.5em;
 }
 
-.form-box {
-    border: 1px solid black;
+.facts {
+    padding: 1em;
 }
 
 section, article {
@@ -94,14 +97,15 @@ section, article {
 
 .footer {
     position: absolute;
-    left: 70%;
+    left: 87%;
+    margin: 0;
 }
 
 .btn {
     background-color: rgb(207, 243, 243);
     padding: 1rem;
     border: solid 2px black;
-    margin: 1em;
+    margin-top: 1em;
 }
 
 .form-block {
@@ -110,6 +114,15 @@ section, article {
     display: block;
 }
 
-input {
-    max-width: auto;
+.form-box {
+    border: 2px solid black;
+    padding: 2em 1em 1em 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.input {
+    width: 100%;
 }
