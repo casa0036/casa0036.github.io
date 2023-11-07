@@ -1,8 +1,12 @@
+/* Adds styling to the body */
+/* Adds  font family to the page */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: rgb(96, 182, 153);
 }
+
+/* targets the class container giving the webpage a colour background */
 
 .container {
     background-color: rgb(207, 243, 243);
@@ -10,6 +14,8 @@ body {
     margin: 0 auto;
     padding-bottom: 20%;
 }
+
+/* Adds the styling for nav */
 
 .nav {
     margin-top: .5em;
@@ -35,6 +41,9 @@ body {
     display: block;
     text-align: center;
 }
+
+/* Adds the banner style */
+/* Formats the h1 to be positiion on top of the banner img */
 
 .banner {
     position: relative;
@@ -69,6 +78,8 @@ p {
     padding-right: 1rem;
 }
 
+/* Makes all headers not bold */
+
 h1, h2, h3, h4{
     font-weight: normal;
     margin-top: .5em;
@@ -90,6 +101,8 @@ section, article {
     padding: 1em;
 }
 
+/* Give the middle nav button */
+
 .nav ul li:nth-child(even){
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -101,12 +114,16 @@ section, article {
     margin: 0;
 }
 
+/* Adds styling to the button */
+
 .btn {
     background-color: rgb(207, 243, 243);
     padding: 1rem;
     border: solid 2px black;
     margin-top: 1em;
 }
+
+/* Adds the format and styling to the form */
 
 .form-block {
     margin: 1rem;
@@ -118,6 +135,8 @@ section, article {
     border: 2px solid black;
     padding: 2em 1em 1em 1em;
 }
+
+/* Makes the text area */
 
 textarea {
     resize: none;
