@@ -1,0 +1,43 @@
+/* font-family: 'Lora', serif;
+font-family: 'Noto Sans', sans-serif; */
+
+h1, h2 {
+    font-family: 'Lora', serif; 
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+.fa-palette {
+    font-size: 10rem;
+    color: crimson;
+}
+
+.max-mar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: antiquewhite;
+}
+
+.head {
+    background-color: bisque;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
