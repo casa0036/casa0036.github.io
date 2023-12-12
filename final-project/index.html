@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>final-project</title>
+    <title>Final Project</title>
     <!-- Link css rest -->
     <link rel="stylesheet" href="css/rest.css">
     <!-- link google fonts styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 
     <!-- icon links styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css/">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -22,36 +24,41 @@
         <!-- Creates a masthead to contain the nav and hero banner section -->
         <header class="masthead">
             <div>
-                <img src="images/logo.png" alt="Three Stars Media">
-                <nav>
-                    <!-- Adds nav with id's for each section to the webpage -->
-                    <ul>
-                        <li><a href="#home" class="current">Home</a></li>
-                        <li><a href="#about-us">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <form action="#search" method="post">
-                        <label for="search"></label>
-                        <input type="text" id="search" name="search" placeholder="Search" required>
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </nav>
+                <div class="nav">
+                    <img src="images/logo.png" alt="Three Stars Media">
+                    <nav>
+                        <!-- Adds nav with id's for each section to the webpage -->
+                        <ul>
+                            <li><a href="#home" class="current">Home</a></li>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <form action="#search" method="post">
+                            <div class="search-bar">
+                                <label for="search"></label>
+                                <input type="text" id="search" name="search" placeholder="Search" required>
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
                 <!-- Creates a hero banner container -->
                 <div class="hero-banner">
-                    <img src="images/main-banner.jpg" alt="Main Banner">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur ipsum, corrupti
-                        praesentium enim molestias cupiditate consequatur, commodi voluptates soluta dolorum aperiam
-                        dolores aliquam porro quos. Tempore aut fugit quaerat.</p>
-                    <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                    <div class="hero-banner-text">
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur ipsum, corrupti
+                            praesentium enim molestias cupiditate consequatur, commodi voluptates soluta dolorum aperiam
+                            dolores aliquam porro quos!</p>
+                        <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
             </div>
         </header>
         <main>
             <!-- Creates about us section -->
-            <section class="#about-us">
+            <section id="about-us" class="wrapper">
                 <div>
                     <img src="images/about-us.jpg" alt="Ping pong table in the office">
                     <h2>About Us</h2>
@@ -64,83 +71,98 @@
                 </div>
                 <!-- Creates a services section -->
             </section>
-            <section class="#services">
+            <section id="services" class="wrapper">
                 <h2>Our Services</h2>
                 <!-- Sets up div containers for the cards -->
                 <div class="cards">
-                    <div class="one">
+                    <div class="card one">
                         <img src="images/digital.jpg" alt="Digital Transformation">
-                        <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatum est doloribus,
-                            neque quod animi repellat exercitationem ratione illo necessitatibus sint doloremque
-                            laboriosam aperiam dolorum id temporibus iste, quibusdam rerum.</p>
-                        <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+                        <div class="card-text">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatum est doloribus,
+                                neque quod animi repellat exercitationem ratione illo necessitatibus sint doloremque
+                                laboriosam aperiam dolorum id temporibus iste, quibusdam rerum.</p>
+                            <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
-                    <div class="two">
+                    <div class="card two">
                         <img src="images/marketing.jpg" alt="Marketing">
-                        <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi, id libero eum
-                            perferendis officia atque nulla adipisci illum. Adipisci id nisi, vero quibusdam reiciendis
-                            nostrum inventore similique officia? Pariatur.</p>
-                        <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+                        <div class="card-text">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi, id libero eum
+                                perferendis officia atque nulla adipisci illum. Adipisci id nisi, vero quibusdam
+                                reiciendis
+                                nostrum inventore similique officia? Pariatur.</p>
+                            <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
-                    <div class="three">
+                    <div class="card three">
                         <img src="images/video.jpg" alt="Video Production">
-                        <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam in totam sapiente
-                            consequuntur ipsam nemo maiores repellat, optio quisquam, quam, distinctio reiciendis?
-                            Tempore saepe at expedita numquam, molestias dolore dolorem!</p>
-                        <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
+                        <div class="card-text">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam in totam sapiente
+                                consequuntur ipsam nemo maiores repellat, optio quisquam, quam, distinctio reiciendis?
+                                Tempore saepe at expedita numquam, molestias dolore dolorem!</p>
+                            <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
-                    <div class="four">
+                    <div class="card four">
                         <img src="images/web.jpg" alt="Web Development">
-                        <h3>Web Development</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit quisquam
-                            consequatur, saepe inventore cum dolore! Ullam necessitatibus ad porro illo, architecto
-                            alias, doloremque fugiat, dignissimos dolorum animi magni perspiciatis!</p>
-                        <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
+                        <div class="card-text">
+                            <h3>Web Development</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit quisquam
+                                consequatur, saepe inventore cum dolore! Ullam necessitatibus ad porro illo, architecto
+                                alias, doloremque fugiat, dignissimos dolorum animi magni perspiciatis!</p>
+                            <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
-                    <div class="five">
+                    <div class="card five">
                         <img src="images/print.jpg" alt="Print">
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis iusto natus
-                            doloremque consequuntur cumque provident exercitationem, sapiente nulla molestiae dolore ea
-                            quam illo dignissimos similique ex! Minima, ipsam rem!</p>
-                        <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
+                        <div class="card-text">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis iusto natus
+                                doloremque consequuntur cumque provident exercitationem, sapiente nulla molestiae dolore
+                                ea
+                                quam illo dignissimos similique ex! Minima, ipsam rem!</p>
+                            <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- Adds an aside for the our vision section -->
             <aside>
-                <img src="images/vision.jpg" alt="Our Vision">
-                <h2>Our Vision</h2>
+                <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, qui expedita ipsa id maiores
                     mollitia aliquam explicabo consectetur eum amet vitae modi impedit quam accusantium hic dicta soluta
                     atque rem?</p>
                 <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
             </aside>
             <!-- Add a team section for team -->
-            <section class="#team">
+            <section id="team" class="wrapper">
                 <h2>Our Team</h2>
-                <div class="john">
+                <div class="team">
                     <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nulla alias labore
-                        architecto necessitatibus voluptatibus quasi itaque sed. Fugit accusamus quae sint quis?
-                        Cupiditate repudiandae placeat tempore molestiae cum.</p>
+                    <div class="team-text">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nulla alias labore
+                            architecto necessitatibus voluptatibus quasi itaque sed. Fugit accusamus quae sint quis?
+                            Cupiditate repudiandae placeat tempore molestiae cum.</p>
+                    </div>
                 </div>
-                <div class="bob">
+                <div class="team">
                     <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>Ceo and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis totam rem, itaque vero
-                        laboriosam doloremque facere praesentium? Reiciendis esse repudiandae accusamus? Numquam
-                        repudiandae, animi harum molestias veniam perferendis molestiae!</p>
+                    <div class="team-text">
+                        <h3>Bob Rite</h3>
+                        <h4>Ceo and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis totam rem, itaque vero
+                            laboriosam doloremque facere praesentium? Reiciendis esse repudiandae accusamus? Numquam
+                            repudiandae, animi harum molestias veniam perferendis molestiae!</p>
+                    </div>
                 </div>
             </section>
             <!-- Creates a Contact section -->
-            <section class="#contact">
+            <section id="contact" class="wrapper">
                 <h2>Contact Us</h2>
                 <div>
                     <div class="contact">
@@ -159,19 +181,13 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message"></textarea>
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit">Send</button>
                         </form>
-                    </div>
-                    <div class="map">
-                        <h3>Location</h3>
-                        <!-- map embed -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.8270234783203!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701470373937!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="hours">
                         <!-- Puts hours of operation in table -->
                         <h3>Hours of operation</h3>
                         <table>
-                            <caption>Hours of Operation</caption>
                             <thead>
                                 <tr>
                                     <th>Day</th>
@@ -189,6 +205,14 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="map">
+                        <h3>Location</h3>
+                        <!-- map embed -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.8270234783203!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701470373937!5m2!1sen!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>

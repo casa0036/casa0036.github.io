@@ -1,12 +1,273 @@
-body {
+/* gobal styles */
+html {
+    font-size: 14px;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+.fa-caret-right {
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* nav styles */
+.nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+.nav img {
+    background-color: #c78c06;
+    margin: 0;
+    max-width: 25%;
+    padding-right: 335.8px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 nav li a {
-    text-align: none;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #c78c06;
+    font-size: 1rem;
+    padding: 10px;
 }
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+/* form styling */
+.search-bar {
+    display: inline;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input,
+.search-bar button {
+    padding: .5em;
+}
+
+.search-bar input {
+   flex-grow: 1;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    font-size: 1.2rem;
+}
+
+.search-bar button {
+    background-color: #222;
+    border: solid 1px #c78c06;
+}
+
+/* hero banner styling */
+.hero-banner {
+    background: url(../images/main-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 3em 0 3em 0;
+    position: relative;
+}
+
+.hero-banner-text {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1rem;
+}
+
+.hero-banner-text h1 {
+    margin-bottom: .5rem;
+}
+
+.hero-banner button {
+    background-color: #c78c06;
+    padding: 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* about us styling */
+
+#about-us {
+    background-color: #ffe6ac;
+}
+
+/* our services styling */
+
+.card {
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+.card-text button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* our vision styling */
+
+aside {
+    background: url(../images/vision.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 1rem;
+}
+
+aside button {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: solid 1px #c78c06;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* our team styling */
+
+.team {
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.team-text {
+    padding: 1rem;
+}
+
+.team-text h3,
+.team-text p,
+.team-text h4 {
+    margin: 0;
+}
+.team h4 {
+    border-bottom: 1.5px solid #c78c06;
+}
+
+.team p {
+    padding-top: .5rem;
+}
+
+/* contact us styles */
+
+.contact label {
+    display: block;
+}
+
+.contact input {
+    width: 95%;
+    padding: .5rem;
+}
+
+textarea {
+    resize: none;
+    width: 98%;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.contact button {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    font-size: 1.5rem;
+}
+/* map styling */
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* hour table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: normal;
+    background-color: #ffe6ac;
+    border: 1px solid #222;
+    padding: 1rem;
+}
+
+td {
+    border: 1px solid #222;
+    padding: 1rem;
+}
+
+/* footer styling */
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding-top: 1.5rem;
+}
+
+footer a{
+    color: #c78c06;
+}
+
+
+
+
+
 
