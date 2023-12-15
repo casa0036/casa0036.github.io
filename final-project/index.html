@@ -35,14 +35,14 @@
                             <li><a href="#team">Team</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <form action="#search" method="post">
-                            <div class="search-bar">
-                                <label for="search"></label>
-                                <input type="text" id="search" name="search" placeholder="Search" required>
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </div>
-                        </form>
                     </nav>
+                    <form class="form" action="#search" method="post">
+                        <div class="search-bar">
+                            <label for="search"></label>
+                            <input type="text" id="search" name="search" placeholder="Search" required>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
                 </div>
                 <!-- Creates a hero banner container -->
                 <div class="hero-banner">
@@ -59,7 +59,7 @@
         <main>
             <!-- Creates about us section -->
             <section id="about-us" class="wrapper">
-                <div>
+                <div class="about clearfix">
                     <img src="images/about-us.jpg" alt="Ping pong table in the office">
                     <h2>About Us</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem dolor commodi ad.
@@ -92,7 +92,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi, id libero eum
                                 perferendis officia atque nulla adipisci illum. Adipisci id nisi, vero quibusdam
                                 reiciendis
-                                nostrum inventore similique officia? Pariatur.</p>
+                                nostrum inventore similique officia? Pariatur.inventore similique officia?similique
+                                offi.</p>
                             <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
@@ -123,7 +124,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis iusto natus
                                 doloremque consequuntur cumque provident exercitationem, sapiente nulla molestiae dolore
                                 ea
-                                quam illo dignissimos similique ex! Minima, ipsam rem!</p>
+                                quam illo dignissimos similique ex! Minima, ipsam rem!similique ex! Minima, ipsam
+                                rem!similique ex! Mini psam remsikklfue ex. Minima ipsam rem!similique</p>
                             <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
@@ -140,31 +142,39 @@
             <!-- Add a team section for team -->
             <section id="team" class="wrapper">
                 <h2>Our Team</h2>
-                <div class="team">
-                    <img src="images/john.jpg" alt="John Doe">
-                    <div class="team-text">
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nulla alias labore
-                            architecto necessitatibus voluptatibus quasi itaque sed. Fugit accusamus quae sint quis?
-                            Cupiditate repudiandae placeat tempore molestiae cum.</p>
+                <div class="team-flex">
+                    <div class="team john">
+                        <div class="john-img">
+                            <img src="images/john.jpg" alt="John Doe">
+                        </div>
+                        <div class="team-text john-text">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque obcaecati nulla alias
+                                labore
+                                architecto necessitatibus voluptatibus quasi itaque sed. Fugit accusamus quae sint quis?
+                                Cupiditate repudiandae placeat tempore molestiae cum.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="team">
-                    <img src="images/bob.jpg" alt="Bob Rite">
-                    <div class="team-text">
-                        <h3>Bob Rite</h3>
-                        <h4>Ceo and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis totam rem, itaque vero
-                            laboriosam doloremque facere praesentium? Reiciendis esse repudiandae accusamus? Numquam
-                            repudiandae, animi harum molestias veniam perferendis molestiae!</p>
+                    <div class="team bob">
+                        <div class="bob-img">
+                            <img src="images/bob.jpg" alt="Bob Rite">
+                        </div>
+                        <div class="team-text bob-text">
+                            <h3>Bob Rite</h3>
+                            <h4>Ceo and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis totam rem, itaque
+                                vero
+                                laboriosam doloremque facere praesentium? Reiciendis esse repudiandae accusamus? Numquam
+                                repudiandae, animi harum molestias veniam perferendis molestiae!</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- Creates a Contact section -->
             <section id="contact" class="wrapper">
                 <h2>Contact Us</h2>
-                <div>
+                <div class="contact-flex">
                     <div class="contact">
                         <h3>Send us a message</h3>
                         <!-- Adds contact form in a div contanier -->

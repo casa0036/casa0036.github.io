@@ -9,6 +9,18 @@ body {
     margin: 0;
 }
 
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -58,7 +70,6 @@ h3 {
 .nav img {
     background-color: #c78c06;
     margin: 0;
-    max-width: 25%;
     padding-right: 335.8px;
     display: block;
 }
@@ -99,7 +110,7 @@ nav ul a:focus {
 }
 
 .search-bar input {
-   flex-grow: 1;
+   width: 100%;
 }
 
 .fa-magnifying-glass {
@@ -211,7 +222,7 @@ aside button {
 }
 
 .contact input {
-    width: 95%;
+    width: 98%;
     padding: .5rem;
 }
 
@@ -266,7 +277,178 @@ footer a{
     color: #c78c06;
 }
 
+/* Desktop styles */
 
+@media screen and (min-width: 760px) {
+
+    html {
+        font-size: 16px;
+    }
+
+
+    .wrapper {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /* nav desktop styles */
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
+        place-items: center;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block; 
+        padding: 15px 25px;
+    }
+
+    .nav img {
+        max-width: fit-content;
+        padding-right: 0;
+        display: inline;
+    }
+
+    .search-bar input {
+        display: inline;
+     }
+
+
+     /* hero-banner desktop styles */
+
+     .hero-banner {
+        padding: 45px 100px 45px 100px;
+     }
+
+     .hero-banner-text {
+        padding: 45px 25px;
+        margin: 0 auto;
+     }
+
+     /* about us desktop styling  */
+
+     .about img {
+        float: left;
+        width: 40%;
+        margin-right: 1em;
+     }
+
+     /* our services desktop styling */
+     .cards {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .one,
+     .two {
+        flex-basis: calc(50% - 4px);
+     }
+
+     .one {
+        margin-right: 7px;
+     }
+     
+     .three,
+     .four,
+     .five {
+        flex-basis: calc(33% - 4px); 
+     }
+
+     .four {
+        margin-left: 9px;
+        margin-right: 9px;
+     }
+
+     .card button {
+        width: 100%;
+     }
+
+     /* aside desktop styling */
+
+     aside {
+        padding-left: 10rem;
+        padding-right: 10rem;
+     }
+
+     /* Team desktop styling */
+
+     .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .bob-text  {
+        margin-right: 600px;
+     }
+
+     .john-text  {
+        margin-left: 600px;
+     }
+
+     .john-img {
+        float: left;
+     } 
+
+     .bob-img {
+        float: right;
+     }
+
+     /* contact desktop styling */
+
+     .contact-flex {
+        display: flex;
+        flex-flow: wrap;
+     }
+
+     .contact {
+        order: 1;
+        flex-grow: 1;
+     }
+
+     textarea {
+        height: 150px;
+     }
+
+     .hours {
+        order: 3;
+        flex-basis: 100%;
+        padding-top: 5rem;
+     }
+
+     .map {
+        order: 2;
+        flex-grow: 1;
+     }
+
+     /* footer desktop styling */
+
+     footer {
+        padding-left: 7rem;
+        padding-bottom: 2rem;
+     }
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
